@@ -9,6 +9,17 @@
   <link href="/resources/css/style.css" rel="stylesheet">
   <script src="resources/js/jquery-2.0.3.min.js"> </script>
   <script src="resources/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="/resources/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'] ],
+          processEscapes: true
+        },
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+      });
+  </script>
 
   <title>{{ page.title }}</title>
  </head>
