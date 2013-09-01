@@ -9,26 +9,18 @@
   <link href="/resources/css/style.css" rel="stylesheet">
   <script src="resources/js/jquery-2.0.3.min.js"> </script>
   <script src="resources/js/bootstrap.min.js"> </script>
-  <script type="text/javascript" src="/resources/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-  </script>
-  <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'] ],
-          processEscapes: true
-        },
-        TeX: { equationNumbers: { autoNumber: "AMS" } }
-      });
-  </script>
-
   <title>{{ page.title }}</title>
  </head>
  <body>
  <div class="wrapper">
    <div id="header">
     <div class="container">
-     <h1><a href="/">natronics</a> <small>on github.com</small></h1>
-     <p>{{ page.title }}<p>
+     <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 col-md-12">
+       <h1><a href="/">natronics</a> <small>on github.com</small></h1>
+       <p>{{ page.title }}<p>
+      </div>
+     </div>
     </div>
    </div>
 
