@@ -1,0 +1,31 @@
+---
+layout: base
+---
+<div class="row">
+ <div class="col-lg-10 col-lg-offset-1 col-md-12">
+   <h1>{{ page.title }}</h1>
+   <hr>
+   <div class="row">
+     <div class="col-lg-7">
+        <img src="{{ page.mainimage }}" class="img-rounded img-responsive">
+     </div>
+     <div class="col-lg-5 thingactions">
+       <h2>Make It!</h2>
+       <ul class="nav nav-pills nav-stacked">
+         <li><a href="{{ page.fork }}">Fork this project on github</a></li>
+         <li><a href="{{ page.fork }}/tree/master/stl">View STL files</a></li>
+       </ul>
+       <a href="{{ page.fork }}/archive/master.zip" class="btn btn-primary thingdownload">Download This Thing!</a>
+     </div>
+   </div>
+  <hr>
+  <h2>Description</h2>
+  {{ content }}
+  <h2>3D Print Files</h2>
+    <ul>
+      {% for stl in page.stls %}
+        <li><a href="{{ page.fork }}/blob/master/stl/{{ stl | split:'/' | last}}">{{ stl | split:'/' | last}}</a></li>
+      {% endfor %}
+    </ul>
+ </div>
+</div>
