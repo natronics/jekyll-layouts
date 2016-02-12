@@ -3,11 +3,11 @@ layout: base
 ---
 
 <section>
- <div class="container columns">
- <div id="main" class="column is-8">
-  {{ content }}
- </div>
- <aside class="column">
+ <div class="container"><div class="columns">
+  <div id="main" class="column is-8">
+   {{ content }}
+  </div>
+  <aside class="column">
   <h1 class="title">Blag</h1>
   <ul class="posts">
    {% for post in site.posts %}
@@ -17,5 +17,5 @@ layout: base
    {% endfor %}
   </ul>
  </aside>
- </div>
+ </div></div>
 </section>
